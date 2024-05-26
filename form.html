@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #b19bb19c;
+        }
+        form{
+            margin-top: 7%;
+            border: solid 1px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.701);
+            width: 365px;
+            height: 400px;
+        }
+        label {
+            
+            color: #1a1818;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+            
+        }
+        input,select{
+              width: 252px;
+              height: 39px;
+              background-color: rgb(89, 176, 202);
+              border: solid 1px #f5f5f57f ;
+              border-radius: 12px;
+              margin-top: 5px;  
+              color: rgb(54, 22, 22);
+              font-family:Arial, Helvetica, sans-serif;
+              font-size: medium;
+              font-weight: bold;
+        }
+        #button {
+            width: 252px;
+            height: 34px;
+            border: solid 1px aqua;
+            border-radius: 12px;
+            background-color: rgb(0, 157, 255);
+            box-shadow: 2px 2px 10px 1px aqua;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        #button a{
+            text-decoration: none;
+            color: black;
+        }
+        
+  </style>
+  
+</head>
+<body>
+    <form action="form.php"  align="center">
+        <br><br>
+        <label for="nom" >First name : </label>
+        <input type="text" placeholder="First name" id="name" name="FN"><br><br>
+        <label for="prenom" >Last name : </label>
+        <input type="text" placeholder="last name" name="LN"><br><br>
+        <label for="pet">Favourite Pet</label><br>
+
+        <select name="pet" id="pet" align="center">
+            <option value="Non" disabled selected  align="center">None</option>
+            <option value="Dog"  align="center">Dog</option>
+            <option value="Cat"  align="center">Cat</option>
+            <option value="Bird"  align="center">Bird</option>
+        </select><br><br><br>
+
+        <input type="submit" id="button">
+        <!-- <button onclick="bnj()"><a href="#">Login</a></button><br><br> -->
+
+        
+    </form><br>
+
+        <!-- welcome <?php echo $_GET["FN"]; ?><br>
+        your email address is :  <?php echo $_GET["LN"]; ?> -->
+
+
+
+    <!-- <script>
+        function bnj(){
+            var nom = document.getElementById("name").value
+            alert("bonjour " + nom)
+        }
+  </script> -->
+</body>
+</html>
